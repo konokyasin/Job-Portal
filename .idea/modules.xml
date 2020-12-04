@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Job-Portal.iml" filepath="$PROJECT_DIR$/.idea/Job-Portal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../User-App/.idea/User-App.iml" filepath="$PROJECT_DIR$/../User-App/.idea/User-App.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Webcam-laravel/.idea/Webcam-laravel.iml" filepath="$PROJECT_DIR$/../Webcam-laravel/.idea/Webcam-laravel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../laravel-auth/.idea/laravel-auth.iml" filepath="$PROJECT_DIR$/../laravel-auth/.idea/laravel-auth.iml" />
+    </modules>
+  </component>
+</project>
