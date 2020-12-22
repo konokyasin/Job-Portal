@@ -10,104 +10,22 @@
         <div class="nonloop-block-15 owl-carousel">
 
 
-            <div class="media-with-text">
-                <div class="img-border-sm mb-4">
-                    <a href="#" class="image-play">
-                        <img src="external/images/img_1.jpg" alt="" class="img-fluid">
-                    </a>
-                </div>
-                <h2 class="heading mb-0 h5"><a href="#">Jobs are made easy</a></h2>
-                <span class="mb-3 d-block post-date">January 20, 2018 &bullet; By <a href="#">Josh Holmes</a></span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat nobis veritatis tempora natus rerum obcaecati.</p>
-            </div>
+           @foreach($posts as $post)
 
-            <div class="media-with-text">
-                <div class="img-border-sm mb-4">
-                    <a href="#" class="image-play">
-                        <img src="external/images/img_2.jpg" alt="" class="img-fluid">
-                    </a>
-                </div>
-                <h2 class="heading mb-0 h5"><a href="#">Jobs are made easy</a></h2>
-                <span class="mb-3 d-block post-date">January 20, 2018 &bullet; By <a href="#">Josh Holmes</a></span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat nobis veritatis tempora natus rerum obcaecati.</p>
-            </div>
+                    <div class="media-with-text">
+                        <div class="img-border-sm mb-4">
+                            <a href="" class="image-play">
+                                <img src="{{ asset('storage/'.$post->image) }}" alt="no image" class="img-fluid">
+                            </a>
+                        </div>
+                        <h2 class="heading mb-0 h5"><a href="#">{{ $post->title }}</a></h2>
+                        <span class="mb-3 d-block post-date">{{ date('F d, Y', strtotime($post->created_at)) }} &bullet; By <a href="#">Admin</a></span>
+                        <p>{{ Str::limit ($post->description,200) }}</p>
 
-            <div class="media-with-text">
-                <div class="img-border-sm mb-4">
-                    <a href="#" class="image-play">
-                        <img src="external/images/img_3.jpg" alt="" class="img-fluid">
-                    </a>
-                </div>
-                <h2 class="heading mb-0 h5"><a href="#">Jobs are made easy</a></h2>
-                <span class="mb-3 d-block post-date">January 20, 2018 &bullet; By <a href="#">Josh Holmes</a></span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat nobis veritatis tempora natus rerum obcaecati.</p>
-            </div>
+                        <a href="{{ route('post.show', [$post->id, $post->slug]) }}" class="btn btn-sm btn-primary">Read More</a>
+                    </div>
+            @endforeach
 
-            <div class="media-with-text">
-                <div class="img-border-sm mb-4">
-                    <a href="#" class="image-play">
-                        <img src="external/images/img_1.jpg" alt="" class="img-fluid">
-                    </a>
-                </div>
-                <h2 class="heading mb-0 h5"><a href="#">Jobs are made easy</a></h2>
-                <span class="mb-3 d-block post-date">January 20, 2018 &bullet; By <a href="#">Josh Holmes</a></span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat nobis veritatis tempora natus rerum obcaecati.</p>
-            </div>
-
-            <div class="media-with-text">
-                <div class="img-border-sm mb-4">
-                    <a href="#" class="image-play">
-                        <img src="external/images/img_2.jpg" alt="" class="img-fluid">
-                    </a>
-                </div>
-                <h2 class="heading mb-0 h5"><a href="#">Jobs are made easy</a></h2>
-                <span class="mb-3 d-block post-date">January 20, 2018 &bullet; By <a href="#">Josh Holmes</a></span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat nobis veritatis tempora natus rerum obcaecati.</p>
-            </div>
-
-            <div class="media-with-text">
-                <div class="img-border-sm mb-4">
-                    <a href="#" class="image-play">
-                        <img src="external/images/img_3.jpg" alt="" class="img-fluid">
-                    </a>
-                </div>
-                <h2 class="heading mb-0 h5"><a href="#">Jobs are made easy</a></h2>
-                <span class="mb-3 d-block post-date">January 20, 2018 &bullet; By <a href="#">Josh Holmes</a></span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat nobis veritatis tempora natus rerum obcaecati.</p>
-            </div>
-
-            <div class="media-with-text">
-                <div class="img-border-sm mb-4">
-                    <a href="#" class="image-play">
-                        <img src="external/images/img_1.jpg" alt="" class="img-fluid">
-                    </a>
-                </div>
-                <h2 class="heading mb-0 h5"><a href="#">Jobs are made easy</a></h2>
-                <span class="mb-3 d-block post-date">January 20, 2018 &bullet; By <a href="#">Josh Holmes</a></span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat nobis veritatis tempora natus rerum obcaecati.</p>
-            </div>
-
-            <div class="media-with-text">
-                <div class="img-border-sm mb-4">
-                    <a href="#" class="image-play">
-                        <img src="external/images/img_2.jpg" alt="" class="img-fluid">
-                    </a>
-                </div>
-                <h2 class="heading mb-0 h5"><a href="#">Jobs are made easy</a></h2>
-                <span class="mb-3 d-block post-date">January 20, 2018 &bullet; By <a href="#">Josh Holmes</a></span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat nobis veritatis tempora natus rerum obcaecati.</p>
-            </div>
-
-            <div class="media-with-text">
-                <div class="img-border-sm mb-4">
-                    <a href="#" class="image-play">
-                        <img src="external/images/img_3.jpg" alt="" class="img-fluid">
-                    </a>
-                </div>
-                <h2 class="heading mb-0 h5"><a href="#">Jobs are made easy</a></h2>
-                <span class="mb-3 d-block post-date">January 20, 2018 &bullet; By <a href="#">Josh Holmes</a></span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat nobis veritatis tempora natus rerum obcaecati.</p>
-            </div>
         </div>
 
         <div class="row">

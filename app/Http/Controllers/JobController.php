@@ -6,6 +6,8 @@ use App\Category;
 use App\Company;
 use App\Http\Requests\JobPostRequest;
 use App\Job;
+use App\Post;
+use App\Testimonial;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -23,8 +25,9 @@ class JobController extends Controller
         $jobs = Job::latest()->limit(10)->where('status', 1)->get();
         $companies = Company::get()->random(12);
         $categories = Category::with('jobs')->get();
-        //$jobs = Job::all();
-        return view('welcome', compact('jobs', 'companies', 'categories'));
+        $posts = Post::where('status', 1)->orderBy('id', 'DESC')->get();
+        $testimonial = Testimonial::orderBy('id', 'DESC')->first();
+        return view('welcome', compact('jobs', 'companies', 'categories', 'posts', 'testimonial'));
     }
 
     public function show($id,Job $job){

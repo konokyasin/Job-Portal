@@ -10,7 +10,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
       <!-- Scripts -->
-    <script defer src="{{ asset('js/app.js') }}"></script>
+    <script  src="{{ asset('js/app.js') }}"></script>
 
     <!-- jqueryDatepickerScripts -->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -74,8 +74,9 @@
 
                                     @if(Auth::user()->user_type=='employer')
                                         {{ Auth::user()->company->cname }}
-                                    @endif
-                                    @if(Auth::user()->user_type=='seeker')
+                                    @elseif(Auth::user()->user_type=='seeker')
+                                        {{ Auth::user()->name }}
+                                    @else
                                         {{ Auth::user()->name }}
                                     @endif
 
@@ -94,13 +95,15 @@
                                         <a class="dropdown-item" href="{{ route('applicant') }}">
                                             Applicants
                                         </a>
-                                    @else
+                                    @elseif(Auth::user()->user_type=="seeker")
                                         <a class="dropdown-item" href="{{ route('user.profile') }}">
                                             {{ __('profile') }}
                                         </a>
                                         <a class="dropdown-item" href="{{ route('home') }}">
                                             {{ __('Saved jobs') }}
                                         </a>
+                                    @else
+
                                     @endif
 
                                     <a class="dropdown-item" href="{{ route('logout') }}"

@@ -104,5 +104,6 @@
     <orderEntry type="module" module-name="Webcam-laravel" />
     <orderEntry type="module" module-name="User-App" />
     <orderEntry type="module" module-name="laravel-auth" />
+    <orderEntry type="module" module-name="AirPro" />
   </component>
 </module>

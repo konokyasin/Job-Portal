@@ -29,6 +29,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 //jobs
 Route::get('/jobs/{id}/{job}', 'JobController@show')->name('jobs.show');
 
+//single post
+Route::get('/post/{id}/{slug}', 'DashboardController@show')->name('post.show');
+
 //company
 Route::get('/companies', 'CompanyController@company')->name('company');
 Route::get('/company/{id}/{company}', 'CompanyController@index')->name('company.index');
@@ -66,3 +69,24 @@ Route::post('/contact', 'ContactController@handleForm')->name('contact.form');
 //email job link
 Route::post('/job/mail', 'EmailController@send')->name('mail');
 
+//admin Blog
+Route::get('/dashboard', 'DashboardController@index')->middleware('admin');
+Route::get('/dashboard/create', 'DashboardController@create')->middleware('admin');
+Route::post('/dashboard/create', 'DashboardController@store')->name('post.store')->middleware('admin');
+Route::get('/dashboard/{id}/edit', 'DashboardController@edit')->name('post.edit')->middleware('admin');
+Route::post('/dashboard/{id}/update', 'DashboardController@update')->name('post.update')->middleware('admin');
+Route::post('/dashboard/destroy', 'DashboardController@destroy')->name('post.delete')->middleware('admin');
+Route::get('/dashboard/trash', 'DashboardController@trash')->name('post.trash')->middleware('admin');
+Route::get('/dashboard/{id}/trash', 'DashboardController@restore')->name('post.restore')->middleware('admin');
+Route::get('/dashboard/{id}/toggle', 'DashboardController@toggle')->name('post.toggle')->middleware('admin');
+Route::get('/dashboard/{id}/delete-permanently', 'DashboardController@deletePermanently')->name('post.delete.permanently')->middleware('admin');
+
+//admin Testimonial
+Route::get('/testimonial', 'TestimonialController@index')->middleware('admin');
+Route::get('/testimonial/create', 'TestimonialController@create')->middleware('admin');
+Route::post('/testimonial/create', 'TestimonialController@store')->name('testimonial.store')->middleware('admin');
+Route::post('/testimonial/{id}/destroy', 'TestimonialController@destroy')->name('testimonial.destroy')->middleware('admin');
+
+//admin fetching jobs
+Route::get('/dashboard/jobs', 'DashboardController@getAllJobs')->middleware('admin');
+Route::get('/dashboard/{id}/jobs', 'DashboardController@changeJobStatus')->name('change.job.status')->middleware('admin');

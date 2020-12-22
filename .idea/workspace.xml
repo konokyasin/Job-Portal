@@ -1,7 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="77b58197-5dcf-4ddd-a479-b5efce0e691e" name="Default Changelist" comment="" />
+    <list default="true" id="77b58197-5dcf-4ddd-a479-b5efce0e691e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/TestimonialController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/Admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Post.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Role.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Testimonial.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_13_045816_create_roles_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_13_050100_create_role_user_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_21_130941_create_posts_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_22_123259_create_testimonials_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/jobs.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/left_menu.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/read.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/trash.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/others/errors.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/testimonial/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/testimonial/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Job-Portal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Job-Portal.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/JobController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/JobController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/blog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/blog.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/testimonial.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/testimonial.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +43,9 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
@@ -110,15 +146,20 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1g2zHOxxJu34XKYkKVntJ6rZzhp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../laravel-auth" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="D:\phpstorm 2020\raw file\PhpStorm 2020.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
@@ -190,37 +231,44 @@
       <workItem from="1606400636520" duration="1942000" />
       <workItem from="1606451077380" duration="5474000" />
       <workItem from="1606543923989" duration="7935000" />
-      <workItem from="1607086253998" duration="291000" />
+      <workItem from="1607086253998" duration="1590000" />
+      <workItem from="1607436709796" duration="12594000" />
+      <workItem from="1607492653681" duration="11262000" />
+      <workItem from="1607518521495" duration="15213000" />
+      <workItem from="1607573572440" duration="13479000" />
+      <workItem from="1607601921828" duration="13301000" />
+      <workItem from="1607662231422" duration="6966000" />
+      <workItem from="1607678695204" duration="10821000" />
+      <workItem from="1607696462244" duration="6469000" />
+      <workItem from="1607710580266" duration="3124000" />
+      <workItem from="1607751419996" duration="273000" />
+      <workItem from="1607832734463" duration="2889000" />
+      <workItem from="1607839308280" duration="4629000" />
+      <workItem from="1608035399901" duration="1610000" />
+      <workItem from="1608551366383" duration="364000" />
+      <workItem from="1608551773705" duration="10831000" />
+      <workItem from="1608611181882" duration="15477000" />
+      <workItem from="1608640119042" duration="7146000" />
+      <workItem from="1608652205989" duration="4416000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="275" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605278109837">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="275" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1605278109837" />
-    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605598019153">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1605598019153" />
-    <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1606197294564">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1606197294564" />
-    <state width="196" height="539" key="HiddenNamespacesPopup" timestamp="1605867713369">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="196" height="539" key="HiddenNamespacesPopup/0.0.1366.768@0.0.1366.768" timestamp="1605867713369" />
-    <state x="184" y="28" key="SettingsEditor" timestamp="1605277723508">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="184" y="28" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1605277723508" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1606306257754">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1606306257754" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
